@@ -40,6 +40,13 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Enter += new System.EventHandler(this.button1_Enter);
+            this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button1_KeyDown);
+            this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button1_KeyUp);
+            this.button1.Leave += new System.EventHandler(this.button1_Leave);
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
+            this.button1.MouseCaptureChanged += new System.EventHandler(this.button1_MouseCaptureChanged);
             // 
             // button2
             // 
@@ -49,6 +56,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
