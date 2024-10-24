@@ -5,7 +5,15 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Button", "Button\Button.csproj", "{BF742EFC-3FCB-4F76-97F9-1720FA35D93D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Label", "Label\Label.csproj", "{8850E4D7-4CEC-47D4-992B-8A607676BDBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Label", "Label\Label.csproj", "{8850E4D7-4CEC-47D4-992B-8A607676BDBB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextBox", "TextBox\TextBox.csproj", "{78A05A39-1518-4A91-89B8-B0AB4BF7BDF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckBox", "CheckBox\CheckBox.csproj", "{62E2F358-8C42-4C89-B4B7-B364C2276005}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioButton", "RadioButton\RadioButton.csproj", "{1933A3BB-BD13-49CB-8394-68BF038B8C25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBar", "ProgressBar\ProgressBar.csproj", "{C128F63E-A470-4442-8B5E-9CB0DF16512A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{8850E4D7-4CEC-47D4-992B-8A607676BDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8850E4D7-4CEC-47D4-992B-8A607676BDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8850E4D7-4CEC-47D4-992B-8A607676BDBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A05A39-1518-4A91-89B8-B0AB4BF7BDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A05A39-1518-4A91-89B8-B0AB4BF7BDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A05A39-1518-4A91-89B8-B0AB4BF7BDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A05A39-1518-4A91-89B8-B0AB4BF7BDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E2F358-8C42-4C89-B4B7-B364C2276005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E2F358-8C42-4C89-B4B7-B364C2276005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E2F358-8C42-4C89-B4B7-B364C2276005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E2F358-8C42-4C89-B4B7-B364C2276005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1933A3BB-BD13-49CB-8394-68BF038B8C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1933A3BB-BD13-49CB-8394-68BF038B8C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1933A3BB-BD13-49CB-8394-68BF038B8C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1933A3BB-BD13-49CB-8394-68BF038B8C25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C128F63E-A470-4442-8B5E-9CB0DF16512A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C128F63E-A470-4442-8B5E-9CB0DF16512A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C128F63E-A470-4442-8B5E-9CB0DF16512A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C128F63E-A470-4442-8B5E-9CB0DF16512A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
