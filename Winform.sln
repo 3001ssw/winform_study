@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckBox", "CheckBox\CheckB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioButton", "RadioButton\RadioButton.csproj", "{1933A3BB-BD13-49CB-8394-68BF038B8C25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBar", "ProgressBar\ProgressBar.csproj", "{C128F63E-A470-4442-8B5E-9CB0DF16512A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgressBar", "ProgressBar\ProgressBar.csproj", "{C128F63E-A470-4442-8B5E-9CB0DF16512A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBox", "ComboBox\ComboBox.csproj", "{52C9DF22-15D4-4F3B-AA60-B32D8FDBD152}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{C128F63E-A470-4442-8B5E-9CB0DF16512A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C128F63E-A470-4442-8B5E-9CB0DF16512A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C128F63E-A470-4442-8B5E-9CB0DF16512A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C9DF22-15D4-4F3B-AA60-B32D8FDBD152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C9DF22-15D4-4F3B-AA60-B32D8FDBD152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C9DF22-15D4-4F3B-AA60-B32D8FDBD152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C9DF22-15D4-4F3B-AA60-B32D8FDBD152}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
