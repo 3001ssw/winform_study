@@ -34,13 +34,16 @@
             tbListBox = new TextBox();
             btnListBoxClear = new Button();
             listView1 = new ListView();
-            lbListView = new Label();
-            btnListViewAdd = new Button();
-            btnListViewClear = new Button();
-            tbListView = new TextBox();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
+            lbListView = new Label();
+            btnListViewAdd = new Button();
+            btnListViewClear = new Button();
+            tbListView1 = new TextBox();
+            tbListView2 = new TextBox();
+            tbListView3 = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // listBox1
@@ -100,7 +103,6 @@
             listView1.TabIndex = 6;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
-            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // lbListView
             // 
@@ -116,7 +118,7 @@
             btnListViewAdd.Location = new Point(539, 192);
             btnListViewAdd.Name = "btnListViewAdd";
             btnListViewAdd.Size = new Size(75, 23);
-            btnListViewAdd.TabIndex = 8;
+            btnListViewAdd.TabIndex = 10;
             btnListViewAdd.Text = "button1";
             btnListViewAdd.UseVisualStyleBackColor = true;
             btnListViewAdd.Click += btnListViewAdd_Click;
@@ -126,17 +128,41 @@
             btnListViewClear.Location = new Point(620, 191);
             btnListViewClear.Name = "btnListViewClear";
             btnListViewClear.Size = new Size(75, 23);
-            btnListViewClear.TabIndex = 9;
+            btnListViewClear.TabIndex = 11;
             btnListViewClear.Text = "button1";
             btnListViewClear.UseVisualStyleBackColor = true;
             btnListViewClear.Click += btnListViewClear_Click;
             // 
-            // tbListView
+            // tbListView1
             // 
-            tbListView.Location = new Point(360, 192);
-            tbListView.Name = "tbListView";
-            tbListView.Size = new Size(173, 23);
-            tbListView.TabIndex = 7;
+            tbListView1.Location = new Point(360, 194);
+            tbListView1.Name = "tbListView1";
+            tbListView1.Size = new Size(49, 23);
+            tbListView1.TabIndex = 7;
+            // 
+            // tbListView2
+            // 
+            tbListView2.Location = new Point(415, 194);
+            tbListView2.Name = "tbListView2";
+            tbListView2.Size = new Size(49, 23);
+            tbListView2.TabIndex = 8;
+            // 
+            // tbListView3
+            // 
+            tbListView3.Location = new Point(470, 194);
+            tbListView3.Name = "tbListView3";
+            tbListView3.Size = new Size(49, 23);
+            tbListView3.TabIndex = 9;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(620, 220);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 11;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -144,7 +170,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(704, 322);
             Controls.Add(listView1);
-            Controls.Add(tbListView);
+            Controls.Add(tbListView3);
+            Controls.Add(tbListView2);
+            Controls.Add(tbListView1);
+            Controls.Add(button1);
             Controls.Add(btnListViewClear);
             Controls.Add(tbListBox);
             Controls.Add(btnListViewAdd);
@@ -171,9 +200,12 @@
         private Label lbListView;
         private Button btnListViewAdd;
         private Button btnListViewClear;
-        private TextBox tbListView;
+        private TextBox tbListView1;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
+        private TextBox tbListView2;
+        private TextBox tbListView3;
+        private Button button1;
     }
 }

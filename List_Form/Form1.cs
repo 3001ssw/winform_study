@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace List_Form
@@ -49,21 +50,25 @@ namespace List_Form
             lbListBox.Text = "selected index: " + i + ", text: " + str;
         }
 
+        //https://freeprog.tistory.com/232
         private void btnListViewAdd_Click(object sender, EventArgs e)
         {
-            string str = tbListView.Text;
-            if (str == "")
-                return;
+            string str1 = tbListView1.Text;
+            string str2 = tbListView2.Text;
+            string str3 = tbListView3.Text;
 
             listView1.BeginUpdate();
 
-            listView1.Items.Add(str);
+            ListViewItem listViewItem = new ListViewItem(new string[] { str1, str2, str3 });
+            listView1.Items.Add(listViewItem);
 
             listView1.EndUpdate();
 
-            tbListView.Clear();
+            tbListView1.Clear();
+            tbListView2.Clear();
+            tbListView3.Clear();
 
-            tbListView.Focus();
+            tbListView1.Focus();
         }
 
         private void btnListViewClear_Click(object sender, EventArgs e)
@@ -71,13 +76,19 @@ namespace List_Form
             listView1.Items.Clear();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            //
-            //object obj = listView1.Items[i];
-            //string str = listView1.Items[i].ToString();
-            //
-            //lbListView.Text = "selected index: " + i + ", text: " + str;
+            Debug.WriteLine("row: {0}", listView1.Items.Count);
+            Debug.WriteLine("col: {0}", listView1.Columns.Count);
+
+            for (int row = 0; row < listView1.Items.Count; row++)
+            {
+                for (int col = 0; col < listView1.Columns.Count; col++)
+                {
+                    string str = string.Format("item: {0}", listView1.Items[row].SubItems[col].Text.ToString());
+                    Debug.WriteLine(str);
+                }
+            }
         }
     }
 }
