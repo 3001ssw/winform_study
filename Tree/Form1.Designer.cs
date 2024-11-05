@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             treeView1 = new TreeView();
+            imageList1 = new ImageList(components);
             SuspendLayout();
             // 
             // treeView1
@@ -37,6 +40,17 @@
             treeView1.Name = "treeView1";
             treeView1.Size = new Size(342, 431);
             treeView1.TabIndex = 0;
+            treeView1.AfterSelect += treeView1_AfterSelect;
+            // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "server90.png");
+            imageList1.Images.SetKeyName(1, "server90_sel.png");
+            imageList1.Images.SetKeyName(2, "client100.png");
+            imageList1.Images.SetKeyName(3, "client100_sel.png");
             // 
             // Form1
             // 
@@ -53,5 +67,6 @@
         #endregion
 
         private TreeView treeView1;
+        private ImageList imageList1;
     }
 }
