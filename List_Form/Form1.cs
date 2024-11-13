@@ -1,5 +1,8 @@
 using System.Diagnostics;
 using System.Windows.Forms;
+using static System.Windows.Forms.ListViewItem;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace List_Form
 {
@@ -12,7 +15,7 @@ namespace List_Form
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            listView1.View = View.Details;
             // Select the item and subitems when selection is made.
             listView1.FullRowSelect = true;
             // Display grid lines.
@@ -59,7 +62,11 @@ namespace List_Form
 
             listView1.BeginUpdate();
 
-            ListViewItem listViewItem = new ListViewItem(new string[] { str1, str2, str3 });
+            //ListViewItem listViewItem = new ListViewItem(new string[] { str1, str2, str3 });
+            ListViewItem listViewItem = new ListViewItem();
+            listViewItem.Text = str1;
+            listViewItem.SubItems.Add(str2);
+            listViewItem.SubItems.Add(str3);
             listView1.Items.Add(listViewItem);
 
             listView1.EndUpdate();
@@ -87,6 +94,20 @@ namespace List_Form
                 {
                     string str = string.Format("item: {0}", listView1.Items[row].SubItems[col].Text.ToString());
                     Debug.WriteLine(str);
+                }
+            }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ListView listView = (System.Windows.Forms.ListView)sender;
+            foreach (ListViewItem item in listView1.SelectedItems)
+            {
+                Debug.WriteLine(item.Text);
+                Debug.WriteLine("count: " + item.SubItems.Count);
+                foreach (ListViewSubItem subItem in item.SubItems)
+                {
+                    Debug.WriteLine("SubItem: " + subItem.Text);
                 }
             }
         }

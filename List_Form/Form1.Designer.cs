@@ -102,7 +102,7 @@
             listView1.Size = new Size(339, 139);
             listView1.TabIndex = 6;
             listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // lbListView
             // 
