@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tree", "Tree\Tree.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGridView", "DataGridView\DataGridView.csproj", "{010540C0-78F1-4509-86BB-0474AD4B8267}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskedTextBox", "MaskedTextBox\MaskedTextBox.csproj", "{62046FA2-60BB-4AD1-B791-027D273BDC1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskedTextBox", "MaskedTextBox\MaskedTextBox.csproj", "{62046FA2-60BB-4AD1-B791-027D273BDC1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolTip", "ToolTip\ToolTip.csproj", "{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{62046FA2-60BB-4AD1-B791-027D273BDC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62046FA2-60BB-4AD1-B791-027D273BDC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62046FA2-60BB-4AD1-B791-027D273BDC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
