@@ -29,6 +29,10 @@ namespace ToolTip
             {
                 toolTip1.SetToolTip(button1, "클릭시 입력 됩니다.");
             }
+            else if (sender.Equals(this))
+            {
+                toolTip1.SetToolTip(this, "폼 마우스 오버");
+            }
         }
     }
 }
