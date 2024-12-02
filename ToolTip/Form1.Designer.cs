@@ -32,6 +32,7 @@
             maskedTextBox1 = new MaskedTextBox();
             maskedTextBox2 = new MaskedTextBox();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
+            button1 = new Button();
             SuspendLayout();
             // 
             // maskedTextBox1
@@ -41,6 +42,7 @@
             maskedTextBox1.Name = "maskedTextBox1";
             maskedTextBox1.Size = new Size(160, 23);
             maskedTextBox1.TabIndex = 0;
+            maskedTextBox1.MouseHover += Object_MouseHover;
             // 
             // maskedTextBox2
             // 
@@ -49,12 +51,24 @@
             maskedTextBox2.Name = "maskedTextBox2";
             maskedTextBox2.Size = new Size(160, 23);
             maskedTextBox2.TabIndex = 1;
+            maskedTextBox2.MouseHover += Object_MouseHover;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(341, 16);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 2;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.MouseHover += Object_MouseHover;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(428, 219);
+            Controls.Add(button1);
             Controls.Add(maskedTextBox2);
             Controls.Add(maskedTextBox1);
             Name = "Form1";
@@ -69,5 +83,6 @@
         private MaskedTextBox maskedTextBox1;
         private MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.ToolTip toolTip1;
+        private Button button1;
     }
 }
