@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskedTextBox", "MaskedText
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolTip", "ToolTip\ToolTip.csproj", "{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimePicker", "DateTimePicker\DateTimePicker.csproj", "{0A0BB1F8-4C8A-4AEB-A9A5-060A265EF266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBar", "TrackBar\TrackBar.csproj", "{E78A2724-AE43-420F-8E1B-0934E32048C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42AB6DF0-51A7-40A5-A3C6-5A5AC2228E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0BB1F8-4C8A-4AEB-A9A5-060A265EF266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0BB1F8-4C8A-4AEB-A9A5-060A265EF266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0BB1F8-4C8A-4AEB-A9A5-060A265EF266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0BB1F8-4C8A-4AEB-A9A5-060A265EF266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E78A2724-AE43-420F-8E1B-0934E32048C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E78A2724-AE43-420F-8E1B-0934E32048C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E78A2724-AE43-420F-8E1B-0934E32048C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E78A2724-AE43-420F-8E1B-0934E32048C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
